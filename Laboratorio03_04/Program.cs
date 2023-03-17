@@ -3,10 +3,12 @@
 
 using System.ComponentModel;
 using System.Reflection;
-
+Console.WriteLine("Hector Flores");
+Console.WriteLine("----------------------------");
 Console.WriteLine("a. Sumatoria");
 Console.WriteLine("b. Tablas de multiplicar");
 Console.WriteLine("c. Numero perfecto");
+Console.WriteLine("----------------------------");
 
 char opcion = Convert.ToChar(Console.ReadLine());
 
