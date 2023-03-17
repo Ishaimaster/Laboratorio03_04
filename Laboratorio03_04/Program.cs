@@ -1,10 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //n -> sumatoria = 1 + 2....n
 
+using System.ComponentModel;
 using System.Reflection;
 
 Console.WriteLine("a. Sumatoria");
 Console.WriteLine("b. Tablas de multiplicar");
+Console.WriteLine("c. Numero perfecto");
 
 char opcion = Convert.ToChar(Console.ReadLine());
 
@@ -37,9 +39,39 @@ switch (opcion)
             }
             Console.Write('\n');
         }
-
-
         break;
+    case 'c':
+
+
+
+        Console.WriteLine("Ingrese el numero a evaluar");
+        n = Convert.ToInt32(Console.ReadLine());
+        int c = 0;
+        for(int i = 1; i < n; i++) { 
+        ;
+          
+           
+            
+                if (n % i == 0)
+                {
+
+                    c = c + i;
+                }
+            
+
+        }
+          if ( c == n)
+        {
+            Console.WriteLine("El numero es perfecto");
+        }else if (c != n)
+        {
+            Console.WriteLine("El numero no es perfecto");
+        }
+          
+        break; 
+
+
+       
 }
 
 
